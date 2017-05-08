@@ -17,26 +17,20 @@ client.on('message', message => {
 
   if (message.content) {
 
-    let game = function() {
-        if(message.content.includes("Bethesda")) {
-            return true;
-        } else if(message.content.includes("Fallout")) {
-            return true;
-        } else if(message.content.includes("Skyrim")) {
-            return true;
-        } else if(message.content.includes("bethesda")) {
-            return true;
-        } else if(message.conent.includes("fallout")) {
-            return true;
-        } else if(message.content.includes("skyrim")) {
-            return true
-        } else {
-            return false;
-        }
+    let fallout = message.content.match(/(Fallout|fallout)/);
+    let skyrim = message.content.match(/(Skyrim|skyrim)/);
+    let bethesda = message.content.match(/(Bethesda|bethesda)/);
+
+    if (fallout && message.author.bot == false) {
+    message.channel.send("Hey! I heard you were talking about Fallout. If you liked that, then I think you'd love Fallout 4 and the new DLC that's just come out!");
     }
 
-    if (game) {
-    message.channel.sendMessage("Buy my game!");
+    if (skyrim && message.author.bot == false) {
+    message.channel.send("Hey! I heard you were talking about Skyrim. If you liked that, then I think you'd love Skyrim: Special Edition and the new DLC that's just come out!");
+    }
+
+    if (bethesda && message.author.bot == false) {
+    message.channel.send("Hey! I heard you were talking about my company. If you like us, then I think you'll love the new games we've got coming out, including Skyrim: Special Edition and the new Fallout 4 DLC!");
     }
 
   };
