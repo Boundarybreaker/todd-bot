@@ -9,6 +9,9 @@ client.on('ready', () => {
 
 });
 
+//config
+let botConfig = require('./config.json');
+
 // On message, process commands
 client.on('message', message => {
 
