@@ -1,11 +1,10 @@
 {
-  "name": "uwubot",
+  "name": "Toddbot",
   "version": "1.0.0",
-  "description": "A meme bot for spenglers",
+  "description": "Buy my game!",
   "main": "bot.js",
   "dependencies": {
     "discord.js": "^11.0.0",
-    "flickrapi": "^0.6.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -13,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MalHT/uwubot.git"
+    "url": "git+https://github.com/boundarybreaker/toddbot.git"
   },
-  "author": "Maren",
+  "author": "B0undarybreaker",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MalHT/uwubot/issues"
+    "url": "https://github.com/boundarybreaker/toddbot/issues"
   },
-  "homepage": "https://github.com/MalHT/uwubot#readme"
+  "homepage": "https://github.com/boundarybreaker/toddbot#readme"
 }
